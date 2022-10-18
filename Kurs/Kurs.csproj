@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{881DDC4C-3CE9-49A6-8AEC-5E8D5FAE0179}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Kurs</RootNamespace>
+    <AssemblyName>Kurs</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Collections.NonGeneric, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.NonGeneric.4.3.0\lib\net46\System.Collections.NonGeneric.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="10_OOP\Contract.cs" />
+    <Compile Include="10_OOP\Employee.cs" />
+    <Compile Include="10_OOP\Etat.cs" />
+    <Compile Include="10_OOP\Praktyka.cs" />
+    <Compile Include="11_dziedziczenie\DomAzurowy.cs" />
+    <Compile Include="11_dziedziczenie\Domek.cs" />
+    <Compile Include="11_dziedziczenie\iBudynek.cs" />
+    <Compile Include="homeworks\algorytmy\ChristmasTree.cs" />
+    <Compile Include="homeworks\algorytmy\Fibonacci.cs" />
+    <Compile Include="homeworks\algorytmy\Fizz.cs" />
+    <Compile Include="homeworks\algorytmy\IloscSlowCiag.cs" />
+    <Compile Include="homeworks\algorytmy\OdwrocenieSlowa.cs" />
+    <Compile Include="homeworks\algorytmy\Palindrom.cs" />
+    <Compile Include="homeworks\algorytmy\Piramida.cs" />
+    <Compile Include="homeworks\algorytmy\TabliczkaMnozenia.cs" />
+    <Compile Include="homeworks\collections_generics\Zadanie1.cs" />
+    <Compile Include="homeworks\collections_generics\Zadanie2.cs" />
+    <Compile Include="homeworks\oop\Hurtownia.cs" />
+    <Compile Include="homeworks\oop\Instruction.cs" />
+    <Compile Include="homeworks\oop\Stal.cs" />
+    <Compile Include="homeworks\Rownanie.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
